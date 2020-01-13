@@ -1,0 +1,37 @@
+- timestampFormat: dd-mm-yyyy-hh-mm-ss
+  level: INFO
+  sinkType: FILE
+  threadModel: SINGLE
+  writeMode: SYNC
+  config:
+    file_location: /Users/dipjal.chhetri/Desktop/info_level_logs.txt
+
+- timestampFormat: dd-mm-yyyy-hh-mm-ss
+  level: DEBUG
+  sinkType: CONSOLE
+  threadModel: MULTI
+  writeMode: ASYNC
+  config:
+
+- timestampFormat: dd-mm-yyyy-hh-mm-ss
+  level: WARN
+  sinkType: FILE
+  threadModel: SINGLE
+  writeMode: SYNC
+  config:
+    file_location: /Users/dipjal.chhetri/Desktop/warn_level_logs.txt
+
+- timestampFormat: dd-mm-yyyy-hh-mm-ss
+  level: ERROR
+  sinkType: FILE
+  threadModel: SINGLE
+  writeMode: SYNC
+  config:
+    file_location: /Users/dipjal.chhetri/Desktop/error_level_logs.txt
+
+- timestampFormat: dd-mm-yyyy-hh-mm-ss
+  level: FATAL
+  sinkType: CONSOLE
+  threadModel: SINGLE
+  writeMode: ASYNC
+  config:
